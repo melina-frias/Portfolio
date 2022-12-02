@@ -1,0 +1,23 @@
+/*fuentes*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    margin: 0 auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+.navbar{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
