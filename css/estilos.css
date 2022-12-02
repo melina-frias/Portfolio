@@ -17,7 +17,14 @@ header{
 }
 
 .navbar{
+   
+}
+
+.navbar a{
     text-transform: uppercase;
-    letter-spacing: 2px;
+    font-family: ;
     font-size: 10px;
+    word-spacing: 20px;
+    text-decoration: none;
+    color: black;
 }
