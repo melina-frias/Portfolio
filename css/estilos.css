@@ -1,4 +1,6 @@
-/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+/*font-family: 'Source Sans Pro', sans-serif;*/
 
 *{
     margin: 0;
@@ -6,25 +8,259 @@
 }
 
 
-
-header{
-    margin: 0 auto;
-    background-color: aqua;
+header{ /*falta hacer responsive*/
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: center;
+    background-color:white;
+    width: 100%;
+    height: 25px;
+    min-height: 22px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     
 }
 
-.navbar{
-   
+.header-padre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 74%;
 }
 
-.navbar a{
+.logo{
+    font-size: 34px;
+}
+
+
+.navbar a{ /*menu principal*/
     text-transform: uppercase;
-    font-family: ;
-    font-size: 10px;
-    word-spacing: 20px;
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-size: 16px;
+    text-align: center;
     text-decoration: none;
     color: black;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.navbar a:hover{
+    color: rgb(107, 187, 130);
+    text-decoration: underline;
+}
+.icon{ /*fuente redes sociales*/
+    
+    font-size: 16px;
+    word-spacing: 6px;
+    color: black;
+}
+
+div a{
+    color: black;
+    
+}
+
+div a:hover{
+    color: rgb(107, 187, 130);
+}
+
+/*Empieza main*/
+
+.contenedor-padre{ /*todo el section*/
+    margin: 0 auto;
+    
+    
+}
+
+/*inicio*/
+
+.inicio{  /*seccion1*/
+    background-color: rgb(107, 187, 130);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 74%;
+    align-items: center;
+}
+
+.texto{
+    font-family:'Source Sans Pro', sans-serif;
+    color: black;
+    
+}
+.texto>h1{
+    font-weight: normal;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+
+h1 strong,.barra{
+    font-size: 90px;
+    font-weight: bold;
+    
+}
+
+.barra{
+    color: rgba(117, 113, 113, 0.501);
+    margin-left: 10px;
+    
+
+}
+
+.texto p{
+    margin-top: 25px;
+}
+.mis-trabajos>a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    
+}
+.mis-trabajos{
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px 20px 10px 20px;
+    margin-top: 25px;
+}
+
+.contactame{
+    background-color: rgb(107, 187, 130);
+    border: 1px solid rgb(107, 187, 130);
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.contactame>a{
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.contactame>a:hover{
+    color: white;
+}
+
+
+.img-perfil{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 12px solid white;
+    
+}
+
+.flecha-comienzo{
+    margin-left: 50%;
+    margin-top: 100px;
+}
+
+.flecha-comienzo i{
+    font-size: 20px;
+    color: black;
+
+}
+
+.acerca-de{ /*empieza seccion 2, acerca de*/
+    background-color: white;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.contenedor-about{
+    width: 74%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.nombre-seccion{
+    text-align: center;
+}
+
+.nombre-seccion>p{ /*acerca de mi*/
+    background-color: rgb(107, 187, 130);
+    color: black;
+    display: inline;
+    padding: 2px 4px 2px 4px;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.subtitulo{
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contenedor-info{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+}
+
+
+.presentacion h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    
+}
+
+.nombre{
+    font-weight: bold;
+    text-decoration: underline  2px solid rgb(107, 187, 130);
+    
+}
+
+.presentacion p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    margin-top: 15px;
+
+}
+
+/*
+.contenedor-info{
+    width: 74%;
+    margin: 0 auto;
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.presentacion{
+    width: 30%;
+    background-color: blue;
+}
+
+.experiencia{
+    width: 30%;
+    background-color: rebeccapurple;
+}
+/* empieza acerca de
+.contenedor-titulo{
+    font-family: 'Source Sans Pro', sans-serif ;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
