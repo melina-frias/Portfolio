@@ -67,8 +67,6 @@ div a:hover{
 
 .contenedor-padre{ /*todo el section*/
     margin: 0 auto;
-    
-    
 }
 
 /*inicio*/
@@ -81,8 +79,6 @@ div a:hover{
     flex-wrap: wrap;
     align-items: center;
     
-    
-
 }
 
 .contenedor{
@@ -92,6 +88,10 @@ div a:hover{
     margin: 0 auto;
     width: 80%;
     align-items: center;
+    
+    height: auto;
+    
+    
 }
 
 .texto{
@@ -114,9 +114,7 @@ h1 strong,.barra{
 
 .barra{
     color: rgba(117, 113, 113, 0.501);
-    margin-left: 10px;
-    
-
+    margin-left: 10px;    
 }
 
 .texto p{
@@ -146,7 +144,6 @@ h1 strong,.barra{
 .contactame>a{
     font-size: 15px;
     text-align: center;
-
 }
 
 .contactame>a:hover{
@@ -159,12 +156,11 @@ h1 strong,.barra{
     height: 350px;
     border-radius: 50%;
     border: 12px solid white;
-    
 }
 
 .flecha-comienzo{
     margin-left: 50%;
-    margin-top: 100px;
+    
 }
 
 .flecha-comienzo i{
@@ -174,19 +170,20 @@ h1 strong,.barra{
 }
 
 .acerca-de{ /*empieza seccion 2, acerca de*/
-    background-color: white;
+    background-color: rgb(81, 47, 182);
     height: 100vh;
     margin: 0 auto;
 }
 
-.contenedor-about{
+.contenedor-gral{
     width: 80%;
     margin: 0 auto;
-    margin-top: 100px;
+    
 }
 
 .nombre-seccion{
     text-align: center;
+    
 }
 
 .nombre-seccion>p{ /*acerca de mi*/
@@ -272,8 +269,6 @@ h1 strong,.barra{
 .titulo-lista{
     color: gray;
     font-weight: bold;
-    
-    
 }
 
 ul{
@@ -289,37 +284,53 @@ li a:hover{
     text-decoration: none;
 }
 
-.servicios{
-    background-color: rgb(240, 240, 240);
+.servicios{ /*empieza seccion 3, servicios*/
+    background-color: rgb(168, 31, 31);
     height: 100vh;
+    margin: 0 auto;
     
 }
 
-/*
-.contenedor-info{
-    width: 74%;
-    margin: 0 auto;
-    margin-top: 42px;
+
+.padre{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 80px;
 }
 
-.presentacion{
-    width: 30%;
-    background-color: blue;
-}
 
-.experiencia{
-    width: 30%;
-    background-color: rebeccapurple;
-}
-/* empieza acerca de
-.contenedor-titulo{
-    font-family: 'Source Sans Pro', sans-serif ;
-    color: black;
+.box{
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
+    width: 280px;
+    height: 180px;
+    margin-bottom: 25px;
 }
+
+.box i{
+    color: rgb(107, 187, 130);
+    font-size: 45px;
+    
+}
+
+.box h3{
+    font-size: 22px;
+    font-family:'Source Sans Pro', sans-serif ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.box p{
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*
+
+
+
+
+/*  font-family: 'Source Sans Pro', sans-serif ;
