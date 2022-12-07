@@ -36,8 +36,8 @@
             <section class="inicio"> <!-- Empieza Seccion 1  -->
                 <div class="contenedor">
                     <div class="texto">
-                        <h1 class="titulo">Hola, soy freelance</h1>
-                        <h1 class="titulo"><strong>Developer</strong><span class="barra">|</span></h1>
+                        <h1 class="titulo">Hola, soy freelancer</h1>
+                        <h1 class="titulo"><span>Developer</span></h1>
                         <p>establecida en Buenos Aires, Argentina.</p>
                         <button class="mis-trabajos"><a href="#">Ver mis trabajos</a></button>
                         <button class="contactame"><a href="#">Contactame</a></button>
@@ -46,13 +46,12 @@
                         <img class="img-perfil" src="assets/img/fotoprueba.jpg" alt="Foto-personal">
                     </div>
                 </div>
-                <div class="flecha-comienzo">
+            <!-- T<div class="flecha-comienzo">
                     <a href="#"><i class="bi bi-arrow-down"></i></a>
-                </div>
+                </div>  -->
+                
             </section> <!-- Termina seccion 1  -->
 
-
-            
             <section class="acerca-de"> <!-- Empieza seccion 2 -->
                 <div class="contenedor-gral">
                     <div class="nombre-seccion"> <!--Titulo-->
@@ -62,11 +61,13 @@
                     <div class="contenedor-info">
                         <div class="presentacion"> <!--Info personal-->
                             <h1>Hola, soy <span class="nombre">Melina Frias</span></h1>
-                            <p>Soy Diseñadora y Desarrolladora full stack jr. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit molestias obcaecati earum tempore sapiente excepturi soluta reprehenderit eaque totam autem magni odit inventore dolore quasi quisquam vel numquam, placeat voluptas!.</p>
+                            <p>Soy Diseñadora y Desarrolladora full stack jr. Descubrí mi  pasión por el desarrollo web cuando  tuve mi primer página web como Diseñadora de Indumentaria y quería mejorar tanto su aspecto como el rendimiento. De alli comencé a capacitarme en la programación para poder ayudar a otras personas y que puedan llevar a cabo sus proyectos.</p>
                         </div>
                         <div class="caja-experiencia"> <!--Años de experiencia-->
-                            <p class="años">1</p>
-                            <p class="experiencia">Año de <strong class="experiencia">experiencia</strong></p>
+                            <div class="circulo">
+                                <p class="años">1</p>
+                            </div>
+                            <p class="año-de">Año de <span class="experiencia">Experiencia</span></p>
                         </div>
                     </div>
                     <div class="recuadro">
@@ -82,12 +83,11 @@
                         <ul class="titulo-lista">De:
                             <li>Buenos Aires, Argentina</li>
                         </ul>
-
+            
                     </div>
                 </div>
                 
             </section> <!--Termina seccion 2 -->
-            
 
             <section class="servicios"> <!-- Empieza seccion 3 --> 
                 <div class="contenedor-gral">
@@ -131,59 +131,153 @@
                 </div>
             </section> <!--Termina seccion 3 -->
 
-            <section class="resumen" id="resumen"> <!-- Empieza seccion 4 -->
-                <p>Resumen</p>
-                <h2 class="contenedor-titulo">Un resumen de mi curriculum</h2>
-                <div class="padre-resumen">
-                    <div class="educacion">
-                        <div>
-                            <h3>Diplomatura en Programación Web Full Stack</h3>
-                            <p>Universidad Tecnológica Nacional / 2022 - actual</p>
-                            <p>lorem</p>
+            
+            <section class="resumen"> <!-- Empieza seccion 4 -->
+                <div class="contenedor-gral">
+                    <div class="nombre-seccion">
+                        <p>Resumen</p>
+                        <h2 class="subtitulo">Un resumen de mi curriculum</h2>
+                    </div>
+
+                    <div class="padre-resumen">
+                        <div class="resumen-educacion">
+                            <h1>Mi Educación</h1>
+                            <div class="box-resumen">
+                                <div class="caja-educacion">
+                                    <h3>Diplomatura en Programación Web Full Stack</h3>
+                                    <p class="instituto">Universidad Tecnológica Nacional / 2022 - actual</p>
+                                    <p>lorem</p>
+                                </div>
+                                
+                                <div class="caja-educacion">
+                                    <h3>Curso Marketing Digital</h3>
+                                    <p class="instituto">Udemy / Enero 2022 - Abril 2022</p>
+                                    <p>lorem</p>
+                                </div>
+                                
+                                <div class="caja-educacion">
+                                    <h3>Diseñadora y Técnica Sustentable</h3>
+                                    <p class="instituto">Escuela Argentina de Moda / 2021 - 2021</p>
+                                    <p>lorem</p>
+                                </div>
+                                
+                                <div class="caja-educacion">
+                                    <h3>Curso sobre Adobe Illustrator</h3>
+                                    <p class="instituto">Udemy / Agosto 2020 - Febrero 2021</p>
+                                    <p>lorem</p>
+                                </div>
+                                
+                                <div class="caja-educacion">
+                                    <h3>Curso de Marketing en el Negocio de la Moda</h3>
+                                    <p class="instituto">Capacitarte UBA / Septiembre 2020 - Octubre 2020</p>
+                                    <p>lorem</p>
+                                </div>
+                                
+                                <div class="caja-educacion">
+                                    <h3>Licenciatura en Diseño de Indumentaria</h3>
+                                    <p class="instituto">Universidad de Morón / Marzo 2017 - Dieciembre 2020</p>
+                                    <p>lorem</p>
+                                </div>
+                                
+                                <div class="caja-educacion">
+                                    <h3>Bachiller con Orientación en Ciencias Naturales</h3>
+                                    <p class="instituto">Instituto Juan XXIII / Marzo 2011 - Diciembre 2016</p>
+                                    <p>lorem</p>
+                                </div>
+                            </div>
+                                
+                        </div> <!-- termina resumen educacion -->
+            
+                        <div class="resumen-experiencia"> <!--empieza resumen experiencia -->
+                            <h1>Mi Experiencia</h1>
+                            <div class="box-resumen">
+                                <div class="caja-experiencia-resumen">
+                                    <h3>Creadora y Diseñadora</h3>
+                                    <p class="instituto">Moetica / 2021 - actual</p>
+                                    <p>Diseño,corte y confección y teñido natural</p>
+                                </div>
+                            </div>
                         </div>
+                    </div> <!--Termina padre-resumen -->
+
+                    <div class="habilidades"> <!--empieza mis habilidades -->
+                        <h1>Mis habilidades</h1>
+                        <div class="padre-habilidades">
+                            <div class="contenedor-habilidades">
+                                <div class="box-habilidades">
+                                    <p>Diseño Web <span class="porcentaje">80%</span></p>
+                                    <div class="contenedor-hr">
+                                        <hr class="diseño-web">
+                                    </div>
+                                </div>
+                                <div class="box-habilidades">
+                                    <p>HTML/CSS <span class="porcentaje">85%</span></p>
+                                    <div class="contenedor-hr">
+                                        <hr class="html-css">
+                                    </div>
+                                </div>
+                                <div class="box-habilidades">
+                                    <p>JavaScript<span class="porcentaje">50%</span></p>
+                                    <div class="contenedor-hr">
+                                        <hr class="javascript">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="contenedor-habilidades">
                         
-                        <div>
-                            <h3>Diseñadora y Técnica Sustentable</h3>
-                            <p>Escuela Argentina de Moda / 2021 - 2021</p>
-                            <p>lorem</p>
-                        </div>
+                                <div class="box-habilidades">
+                                    <p>Adobe Illustrator <span class="porcentaje">95%</span></p>
+                                    <div class="contenedor-hr">
+                                        <hr class="ai">
+                                    </div>
+                                </div>
+                                <div class="box-habilidades">
+                                    <p>Adobe Photoshop <span class="porcentaje">80%</span></p>
+                                    <div class="contenedor-hr">
+                                        <hr class="ps">
+                                    </div>
+                                </div>
+                                <div class="box-habilidades">
+                                    <p>Diseño Web <span class="porcentaje">80%</span></p>
+                                    <div class="contenedor-hr">
+                                        <hr class="">
+                                    </div>
+                                </div>
+                            </div> <!--Termina contenedor habilidades-->
+                        </div> <!--Termina padre habilidades -->
 
-                        <div>
-                            <h3>Licenciatura en Diseño de Indumentaria</h3>
-                            <p>Universidad de Morón / 2017 - 2020</p>
-                            <p>lorem</p>
-                        </div>
+                    </div> <!--Termina mis habilidades -->
 
+                    <div class="boton-enviar">
+                        <button class="descargar"><a href="#">Descargar CV</a></button>
                     </div>
+                </div> <!--Termina contenedor gral, seccion resumen -->
 
-                    <div class="experiencia">
-                        <div>
-                            <h3>Creadora y Diseñadora</h3>
-                            <p>Moetica / 2021 - actual</p>
-                            <p>lorem</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <h3>Mis habilidades</h3>
-
-            <!--FALTA AGREGAR BARRA PROGRESO-->
-
-            <button><a href="#">Descargra CV</a></button>
-                
             </section> <!--Termina seccion 4 -->
-
-            <section class="portfolio" id="portfolio"> <!-- Empieza seccion 5 -->
-                <p>Portfolio</p>
-                <h2 class="contenedor-titulo">Algunos de mis proyectos más recientes</h2>
-                <nav>
+            <section class="portfolio"> <!--empieza seccion 5 portfolio -->
+                <div class="contenedor-gral">
+                    <div class="nombre-seccion">
+                        <p>Portfolio</p>
+                        <h2 class="subtitulo">Algunos de mis proyectos más recientes</h2>
+                        <ul>
+                            <li><a href="">Todo</a></li>
+                            <li><a href="">Detallada</a></li>
+                            <li><a href="">Maquetas</a></li>
+                            <li><a href="">Videos de Youtube</a></li>
+                            <li><a href="">Videos de Vimeo</a></li>
+                        </ul>
+                    </div>
+                    
                     <a href="">Todo</a>
                     <a href="">Detallada</a>
                     <a href="">Maquetas</a>
                     <a href="">Videos de Youtube</a>
                     <a href="">Videos de Vimeo</a>
-                </nav>
+                </div>
+
+
                 <div class="contenedor-img">
                     <img src="" alt="">
                     <img src="" alt="">
@@ -193,8 +287,21 @@
                     <img src="" alt="">
                 </div>
 
-            </section> <!--Termina seccion 5 -->
-        </div>  <!--Termina contenedor padre -->
+            </section>
+
+
+
+            
+
+            
+
+        </div> <!--Termina contenedor padre -->
+       
+
+            
+
+
+          
     </main>
     <footer></footer>
 </body>

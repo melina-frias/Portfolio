@@ -12,11 +12,12 @@ header{ /*falta hacer responsive*/
     display: flex;
     justify-content: center;
     background-color:white;
+    border-bottom: 2px solid #F7F5F5  ;
     width: 100%;
     height: 25px;
-    min-height: 22px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    min-height: 25px;
+    padding: 16px 0;
+    position: fixed;
     
 }
 
@@ -29,6 +30,10 @@ header{ /*falta hacer responsive*/
 
 .logo{
     font-size: 34px;
+    font-weight: bolder;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-style: regular;
+    text-transform: uppercase;
 }
 
 
@@ -54,44 +59,40 @@ header{ /*falta hacer responsive*/
     color: black;
 }
 
-div a{
+.icon a{
     color: black;
     
 }
 
-div a:hover{
+.icon a:hover{
     color: rgb(107, 187, 130);
 }
 
 /*Empieza main*/
 
-.contenedor-padre{ /*todo el section*/
+main{ /*todo el section*/
     margin: 0 auto;
 }
 
 /*inicio*/
 
-.inicio{  /*seccion1*/
+/*empieza seccion 1*/
+.inicio{
     background-color: rgb(107, 187, 130);
     height: 100vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    
 }
 
 .contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0 auto;
-    width: 80%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    
-    height: auto;
-    
-    
+    width: 80%;
+    height: 580px;
+    min-height: 580px;
 }
 
 .texto{
@@ -99,27 +100,25 @@ div a:hover{
     color: black;
     
 }
-.texto>h1{
+.titulo{
     font-weight: normal;
     font-size: 35px;
     text-transform: uppercase;
 }
 
-
-h1 strong,.barra{
+.titulo span{
     font-size: 90px;
     font-weight: bold;
-    
-}
-
-.barra{
-    color: rgba(117, 113, 113, 0.501);
-    margin-left: 10px;    
+    border-right: 6px solid black;
+    padding-right: 25px;
 }
 
 .texto p{
     margin-top: 25px;
+    font-size: 25px;
+    font-weight: 340;
 }
+
 .mis-trabajos>a{
     color: white;
     text-decoration: none;
@@ -142,6 +141,7 @@ h1 strong,.barra{
 }
 
 .contactame>a{
+    color: black;
     font-size: 15px;
     text-align: center;
 }
@@ -150,49 +150,43 @@ h1 strong,.barra{
     color: white;
 }
 
-
 .img-perfil{
     width: 350px;
     height: 350px;
     border-radius: 50%;
     border: 12px solid white;
-}
-
-.flecha-comienzo{
-    margin-left: 50%;
     
 }
 
-.flecha-comienzo i{
-    font-size: 20px;
-    color: black;
-
-}
-
 .acerca-de{ /*empieza seccion 2, acerca de*/
-    background-color: rgb(81, 47, 182);
-    height: 100vh;
+    background-color: white;
+    padding-top: 95px;
     margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
 }
 
 .contenedor-gral{
     width: 80%;
+    min-height: 600px;
     margin: 0 auto;
     
 }
 
 .nombre-seccion{
     text-align: center;
-    
 }
 
 .nombre-seccion>p{ /*acerca de mi*/
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
     background-color: rgb(107, 187, 130);
     color: black;
     display: inline;
     padding: 2px 4px 2px 4px;
-    font-size: 22px;
-    font-family: 'Source Sans Pro', sans-serif;
+    
 }
 
 .subtitulo{
@@ -236,25 +230,47 @@ h1 strong,.barra{
 
 }
 
+.caja-experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    min-height: 200px;
+    
+}
 
-.años{ /*falta corregir alineacion*/
-    font-family:'Source Sans Pro', sans-serif  ;
-    font-size: 150px;
-    font-weight: bold;
-    color: black;
+.circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: rgb(107, 187, 130);
     border: 1px solid rgb(107, 187, 130);
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    text-align: center;
-    margin-bottom: 40px;
-    
+    min-height: 120px;
+    margin-bottom: 30px;
+}
+
+.años{ 
+    font-family:'Source Sans Pro', sans-serif  ;
+    font-size: 180px;
+    font-weight: bold;
+    color: black;
+}
+
+.año-de{
+    font-size: 36px;
+    font-family:'Source Sans Pro', sans-serif;
 }
 
 .experiencia{
-    font-family:'Source Sans Pro', sans-serif  ;
-    font-size: 26px;
+    font-size: 36px;
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: bold;
 }
 
 .recuadro{
@@ -264,6 +280,7 @@ h1 strong,.barra{
     font-family:'Source Sans Pro', sans-serif ;
     font-size: 18px;
     width: 90%;
+    height: 100px;
 }
 
 .titulo-lista{
@@ -276,7 +293,7 @@ ul{
     
 }
 
-li{
+li,a{
     color: black;
     font-weight: bold;
 }
@@ -284,11 +301,15 @@ li a:hover{
     text-decoration: none;
 }
 
-.servicios{ /*empieza seccion 3, servicios*/
-    background-color: rgb(168, 31, 31);
-    height: 100vh;
+/*empieza seccion 3, servicios*/
+
+.servicios{ 
+    background-color: #FCFCFC;
+    padding-top: 95px;
     margin: 0 auto;
-    
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
 }
 
 
@@ -299,20 +320,20 @@ li a:hover{
     justify-content: space-between;
     margin-top: 90px;
     margin-bottom: 80px;
+   
 }
-
 
 .box{
     text-align: center;
     width: 280px;
     height: 180px;
+    min-height: 180px;
     margin-bottom: 25px;
 }
 
 .box i{
     color: rgb(107, 187, 130);
-    font-size: 45px;
-    
+    font-size: 45px;   
 }
 
 .box h3{
@@ -320,17 +341,217 @@ li a:hover{
     font-family:'Source Sans Pro', sans-serif ;
     margin-top: 20px;
     margin-bottom: 20px;
-
-
 }
 
 .box p{
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-/*
+
+/*empieza seccion 4 , resumen*/
+.resumen{
+    background-color: white;
+    padding-top: 95px;
+    margin: 0 auto;
+    width: 100%;
+    height: 1450px;
+    min-height: 1450px;
+
+}
+
+.padre-resumen{
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    margin-top: 60px;
+    
+}
+
+.resumen-educacion h1{
+    font-size: 26px;
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    
+}
+
+.box-resumen{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    border-left: 3px solid rgb(107, 187, 130);
+    padding-left: 25px;
+    
+}
+
+.caja-educacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #e9e6e6 ; 
+    text-align: initial;
+    width: 100%;
+    height: 105px;
+    margin-bottom: 10px;
+
+}
+
+.caja-educacion h3{
+    font-family:'Source Sans Pro', sans-serif ;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.instituto{
+    font-family:'Source Sans Pro', sans-serif ;
+    font-weight: 540;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.instituto+p{
+    font-family:'Source Sans Pro', sans-serif ;
+    font-weight: 340;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.resumen-experiencia h1{
+    font-size: 26px;
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.caja-experiencia-resumen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #e9e6e6 ; 
+    text-align: initial;
+    width: 100%;
+    height: 105px;
+    margin-bottom: 10px;
+
+}
+.caja-experiencia-resumen h3{
+    font-family:'Source Sans Pro', sans-serif ;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+/*habilidades*/
+.habilidades{
+    margin-top: 50px;
+}
+
+.habilidades h1{
+    font-size: 26px;
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.padre-habilidades{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px; 
+}
+
+.box-habilidades{
+    margin-bottom: 25px;
+    width: 520px;
+    
+}
+
+.box-habilidades p{
+    font-size: 20px;
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.porcentaje{
+    float: right;
+}
+
+.box-habilidades hr{
+    background-color: rgb(107, 187, 130);
+    border: 1px solid rgb(107, 187, 130);
+    border-radius: 3px 0 0 3px;
+    height: 6px;
+}
+
+.contenedor-hr{
+    background-color: rgba(248, 248, 248, 0.816);
+    border: none;
+    border-radius: 3px 3px;
+    width: 514px;
+    height: 8px;
+}
+
+.diseño-web{
+    width: 80%;
+}
+.html-css{
+    width: 85%;
+}
+
+.javascript{
+    width: 50%;
+}
+
+.ai{
+    width: 95%;
+}
+
+.ps{
+    width: 80%;
+}
+.boton-enviar{
+    display: flex;
+    justify-content: center;
+}
+
+.descargar{ /*chequear hover*/
+    background-color:  white ;
+    border: 1PX solid black;
+    align-items: center;
+    padding: 12px 32px;
+}
+
+.descargar:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+.boton-enviar a{
+    color: black;
+    text-align: center;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.boton-enviar a:hover{
+    color: white;
+}
 
 
 
+/*empieza seccion 5 portfolio*/
+.portfolio{
+    background-color: white;
+    padding-top: 95px;
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
 
-/*  font-family: 'Source Sans Pro', sans-serif ;
+}
