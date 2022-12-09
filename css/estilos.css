@@ -513,45 +513,89 @@ li a:hover{
 .ps{
     width: 80%;
 }
+
 .boton-enviar{
     display: flex;
     justify-content: center;
 }
 
-.descargar{ /*chequear hover*/
-    background-color:  white ;
-    border: 1PX solid black;
-    align-items: center;
-    padding: 12px 32px;
-}
-
-.descargar:hover{
-    background-color: black;
-    border: 1px solid black;
-}
-
 .boton-enviar a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.download-btn{
+    background-color: white;
     color: black;
-    text-align: center;
-    font-family:'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    border: 1px solid black;
+    padding: 12px 32px;
     text-decoration: none;
 }
 
-.boton-enviar a:hover{
+.download-btn:hover{
+    background-color: black;
     color: white;
+    border: 1 px solid black;
 }
+
+
 
 
 
 /*empieza seccion 5 portfolio*/
 .portfolio{
-    background-color: white;
+    background-color: #FCFCFC;
     padding-top: 95px;
     margin: 0 auto;
     width: 100%;
-    height: 600px;
+    height: 1150px;
     min-height: 600px;
+}
 
+.contenedor-nav-portfolio{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+
+.nav-portfolio{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+.nav-portfolio a{
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+}
+
+/*falta poner imagenes y efectos*/
+
+
+
+.galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+
+}
+
+
+
+.img-portfolio{
+    width: 345px;
+    height: 400px;
+    margin-bottom: 25px;
+}
+
+
+
+footer{
+    background-color: rgb(107, 187, 130);
 }
