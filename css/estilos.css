@@ -155,6 +155,8 @@ main{ /*todo el section*/
     height: 350px;
     border-radius: 50%;
     border: 12px solid white;
+    object-fit: cover;
+    
     
 }
 
@@ -577,7 +579,11 @@ main{ /*todo el section*/
     color: black;
 }
 
-
+.contenedor-img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .img-portfolio{
     width: 345px;
