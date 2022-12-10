@@ -208,7 +208,7 @@
                                 <div class="caja-experiencia-resumen">
                                     <h3>Creadora y Diseñadora</h3>
                                     <p class="instituto">Moetica / 2021 - actual</p>
-                                    <p>Diseño,corte y confección y teñido natural</p>
+                                    <p>Diseño de colección.Molderia.Teñido natural</p>
                                 </div>
                             </div>
                         </div>
@@ -294,31 +294,15 @@
                         <img class="img-portfolio" src="assets/imagenes/brote-natural.jpg" alt="testing">
                         <img class="img-portfolio" src="assets/imagenes/experimental.jpg" alt="testing">
                         <img class="img-portfolio" src="assets/imagenes/naturaleza.jpg" alt="testing">
-                        
-
-                    </div>
-
-                
-               
-
-                    
+                    </div>                
                   
                 </div>
-            </section>
-            
-
-
-
-            
-
-            
+            </section> <!--Termina seccion portfolio -->
 
         </div> <!--Termina contenedor padre -->
             
+    </main> <!--Termina main -->
 
-
-          
-    </main>
     <footer id="contacto">  <!--Empieza footer -->
         <div class="contenedor-footer">
             <div class="contenedor-contacto">
@@ -337,14 +321,20 @@
             </div>
             <div class="formulario-footer">
                 <h1>¿Estimar tu proyecto?</h1>
-                <form action="" autocomplete="on">
-                    <input type="text" name="nombre" id="" placeholder="Tu nombre">
-                    <label for="">Cuál es tu nombre</label>
-                    <input type="email" name="" id="" placeholder="Tu email">
-                    <label for="">Tu dirección de correo electrónico</label>
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejame tu consulta"></textarea>
-                    <label for="">Cómo puedo ayudarte</label>
-                    <input type="submit" value="">
+                <form action="" class="form-contacto">
+                    <label for="nombre">Cuál es tu nombre:</label>
+                    <input type="text" name="nombre" id="nombre" autocomplete="on">
+
+                    <label for="email">Tu dirección de correo electrónico:</label>
+                    <input type="email" name="correo" id="correo" autocomplete="on">
+
+                    <label for="mensaje">Cómo puedo ayudarte:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+                    <a class="enviar-formulario" href="#">Enviar <i class="bi bi-arrow-right"></i></a>
+
+                
+                </form>
                     
 
                 </form>
