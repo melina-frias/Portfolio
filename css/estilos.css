@@ -104,14 +104,21 @@ main{ /*todo el section*/
     font-weight: normal;
     font-size: 35px;
     text-transform: uppercase;
+    
 }
 
-.titulo span{
+
+.developer{
     font-size: 90px;
     font-weight: bold;
     border-right: 6px solid black;
     padding-right: 25px;
+    overflow: hidden;
 }
+
+/*animacion de titulo,seccion inicio*/
+
+
 
 .texto p{
     margin-top: 25px;
@@ -354,8 +361,8 @@ main{ /*todo el section*/
     padding-top: 95px;
     margin: 0 auto;
     width: 100%;
-    height: 1450px;
-    min-height: 1450px;
+    height: 1800px;
+    min-height: 1800px;
 
 }
 
@@ -366,6 +373,11 @@ main{ /*todo el section*/
     margin-top: 60px;
     
 }
+
+.resumen-educacion{
+    width: 50%;
+}
+
 
 .resumen-educacion h1{
     font-size: 26px;
@@ -391,9 +403,10 @@ main{ /*todo el section*/
     justify-content: center;
     border-bottom: 1px solid #e9e6e6 ; 
     text-align: initial;
-    width: 100%;
+    width: 95%;
     height: 105px;
     margin-bottom: 10px;
+    padding: 20px 0;
 
 }
 
@@ -418,6 +431,9 @@ main{ /*todo el section*/
     margin-bottom: 10px;
 }
 
+.resumen-experiencia{
+    width: 50%;
+}
 
 .resumen-experiencia h1{
     font-size: 26px;
@@ -434,6 +450,7 @@ main{ /*todo el section*/
     width: 100%;
     height: 105px;
     margin-bottom: 10px;
+    padding: 20px 0;
 
 }
 .caja-experiencia-resumen h3{
@@ -718,11 +735,20 @@ textarea{
     font-weight: 500;
     color: white;
     background-color: black;
+    border: 1px solid black;
     width: 100px;
     padding: 8px 4px;
 
 }
 
+.enviar-formulario:hover{
+    background-color: red;
+}
+
+.enviar-formulario{ 
+    transition: background-color 0.3s ease-in;
+    transition: border 0.5s ease-in-out;
+}
 .enviar-formulario i{
     margin-left: 8px;
     font-weight: bold;
