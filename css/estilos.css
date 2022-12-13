@@ -46,7 +46,9 @@ header{ /*falta hacer responsive*/
     color: black;
     margin-left: 12px;
     margin-right: 12px;
+    
 }
+
 
 .navbar a:hover{
     color: #EEE8AA;
@@ -106,19 +108,35 @@ main{ /*todo el section*/
     text-transform: uppercase;
     
 }
+/*animacion de titulo,seccion inicio*/
 
+@keyframes escribir{
+    0%{
+        width: 0px;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+.developer{
+    animation: escribir 2s steps(10);
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+}
 
 .developer{
     font-size: 90px;
-    font-weight: bold;
-    border-right: 6px solid black;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-right: 10px solid black;
+    color: black;
     padding-right: 25px;
     overflow: hidden;
 }
-
-/*animacion de titulo,seccion inicio*/
-
-
 
 .texto p{
     margin-top: 25px;
@@ -139,6 +157,7 @@ main{ /*todo el section*/
     padding: 10px 20px 10px 20px;
     margin-top: 25px;
 }
+
 
 .contactame{
     background-color: #EEE8AA;
@@ -163,9 +182,8 @@ main{ /*todo el section*/
     border-radius: 50%;
     border: 12px solid white;
     object-fit: cover;
-    
-    
 }
+
 
 .acerca-de{ /*empieza seccion 2, acerca de*/
     background-color: white;
@@ -175,6 +193,8 @@ main{ /*todo el section*/
     height: 600px;
     min-height: 600px;
 }
+
+
 
 .contenedor-gral{
     width: 80%;
@@ -593,6 +613,12 @@ main{ /*todo el section*/
     font-size: 18px;
     font-weight: normal;
     color: black;
+    padding-bottom: 5px;
+}
+
+.nav-portfolio a:hover{
+    
+    text-decoration: underline 2px solid #EEE8AA;
 }
 
 .contenedor-img{
@@ -607,7 +633,10 @@ main{ /*todo el section*/
     height: 400px;
     margin-bottom: 20px;
     
+}
 
+.img-portfolio:hover{
+    opacity: 30%;
 }
 /*falta poner efectos*/
 
