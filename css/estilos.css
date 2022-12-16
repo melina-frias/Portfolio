@@ -8,7 +8,7 @@
 }
 
 
-header{ /*falta hacer responsive*/
+header{ 
     display: flex;
     justify-content: center;
     background-color:white;
@@ -100,8 +100,6 @@ html{
     
 }
 
-
-
 .contenedor{
     margin: 0 auto;
     display: flex;
@@ -169,26 +167,29 @@ html{
 .mis-trabajos{
     background-color: black;
     border: 1px solid black;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     margin-top: 25px;
 }
 
 
 .contactame{
     background-color: #EEE8AA;
-    border: 1px solid #EEE8AA;
+    border: none;
     margin-left: 25px;
     margin-top: 25px;
-}
-
-.contactame>a{
     color: black;
     font-size: 15px;
     text-align: center;
 }
 
-.contactame>a:hover{
+.contactame:hover{
     color: white;
+    text-decoration: none;
+}
+
+.contactame i{
+    margin-left: 5px;
+    font-weight: bolder;
 }
 
 .img-perfil{
@@ -627,14 +628,15 @@ html{
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    color: black;
-    padding-bottom: 5px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.553);
+    
+    
 }
 
 .nav-portfolio a:hover{
-    
-    text-decoration: underline 2px solid #EEE8AA;
+    color: black;
+    border-bottom: 2px solid #EEE8AA;
 }
 
 
@@ -648,21 +650,19 @@ html{
 }
 
 .box-img{
-    width: 345px;
-    height: 400px;
     position: relative;
     margin-bottom: 20px;
+    width: 345px;
+    height: 400px;
     
 }
 
 .img-portfolio{
-    width: 345px;
-    height: 400px;
-    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .descripcion-img{
-    text-align: center;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -672,6 +672,7 @@ html{
     height: 100%;
     opacity: 0;
     transition: 0.5s ease;
+    text-align: center;
 }
 
 .box-img:hover .descripcion-img{
@@ -688,18 +689,17 @@ html{
     font-weight: bold;
     margin-bottom: 10px;
     position: relative;
-    top: 40%;
-
+    top: 35%;
 }
 
 .descripcion-img h3{
     font-size: 22px;
     font-weight: bold;
     font-family:'Source Sans Pro', sans-serif ;
-    margin: 6px 0;
     color: white;
+    margin-bottom: 10px;
     position: relative;
-    top: 40%;
+    top: 35%;
 }
 
 .descripcion-img p{
@@ -707,8 +707,9 @@ html{
     font-weight: 500;
     font-family:'Source Sans Pro', sans-serif ;
     color: white;
+    margin-bottom: 10px;
     position: relative;
-    top: 40%;
+    top: 35%;
 }
 
 /*empieza footer*/ 
