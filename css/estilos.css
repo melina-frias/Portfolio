@@ -570,7 +570,9 @@ html{
 .boton-enviar{
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
+
 
 .boton-enviar a{
     font-family: 'Source Sans Pro', sans-serif;
