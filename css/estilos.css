@@ -353,14 +353,19 @@ html{
 
 .padre{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 90px 0;
-    background-color: rebeccapurple;
-    width: 100%;
+    
+    
     
    
+}
+.contenedor-box-servicios{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
 }
 
 .box{
@@ -369,7 +374,7 @@ html{
     height: 220px;
     min-height: 180px;
     margin-bottom: 35px;
-    background-color: aqua;
+    
 }
 
 .box i{
